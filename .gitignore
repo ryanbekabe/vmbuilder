@@ -1,0 +1,15 @@
+.bzr/
+.bzrignore
+.idea/
+Doxyfile
+doc
+.coverage
+coverage-report
+VMBuilder.egg-info
+build
+stamp
+VMBuilder/vcsversion.py
+dist
+MANIFEST
+*.pyc
+*.~1~
