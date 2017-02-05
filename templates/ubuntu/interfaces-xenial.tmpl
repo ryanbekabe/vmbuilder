@@ -6,16 +6,16 @@ auto lo
 iface lo inet loopback
 
 # The primary network interface
-auto eth0
+auto ens3
 #if $ip == 'dhcp'
-iface eth0 inet dhcp
+iface ens3 inet dhcp
 #else
-iface eth0 inet static
+iface ens3 inet static
         address $ip
-        netmask $mask 
+        netmask $mask
         network $net
         broadcast $bcast
-        gateway $gw 
+        gateway $gw
         # dns-* options are implemented by the resolvconf package, if installed
         dns-nameservers $dns
         dns-search $domain
